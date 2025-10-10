@@ -1,52 +1,52 @@
 # 🧠 ONLINE_DS_THEBRIDGE_YanJun
 
-Repositorio personal del itinerario de **Data Science** realizado en *The Bridge*.  
-Incluye notebooks, ejercicios y proyectos organizados por módulos, abarcando desde fundamentos de programación hasta *Machine Learning* y *Data Engineering*.
+Personal repository for the **Data Science** program completed at *The Bridge*.  
+It includes Jupyter notebooks, exercises, and projects organized by modules — covering everything from programming fundamentals to *Machine Learning* and *Data Engineering*.
 
 ---
 
-## 📂 Estructura del repositorio
+## 📂 Repository Structure
 
 ```
 ONLINE_DS_THEBRIDGE_YanJun/
 ├── analytics/
-│   └── EDA/                 # Análisis exploratorio de datos
-├── Machine Learning/        # Modelado clásico y evaluación
+│   └── EDA/                 # Exploratory Data Analysis
+├── Machine Learning/        # Classical modeling and evaluation
 ├── Data Engineering/
-│   └── LLM/                 # Experimentos con LLMs y data pipelines
+│   └── LLM/                 # LLM experiments and data pipelines
 ├── fundamentals/
-│   └── hundir la flota/     # Proyecto de fundamentos (Python)
-└── CAPGEMINI/               # Caso práctico de empresa
+│   └── hundir la flota/     # Python fundamentals project (Battleship game)
+└── CAPGEMINI/               # Business case project
 ```
 
 ---
 
-## 🚀 Instalación y uso
+## 🚀 Installation & Usage
 
-### 1️⃣ Clonar el repositorio
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/yanjunchenye/ONLINE_DS_THEBRIDGE_YanJun.git
 cd ONLINE_DS_THEBRIDGE_YanJun
 ```
 
-### 2️⃣ Crear entorno virtual
+### 2️⃣ Create a virtual environment
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # En Windows: .venv\Scripts\activate
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 ```
 
-### 3️⃣ Instalar dependencias
+### 3️⃣ Install dependencies
 
 ```bash
 pip install -U pip wheel
 pip install jupyterlab numpy pandas matplotlib seaborn scikit-learn plotly tqdm joblib
-# Si trabajas con LLMs o Data Engineering:
+# For LLMs or Data Engineering modules:
 # pip install openai langchain tiktoken sentence-transformers sqlalchemy
 ```
 
-### 4️⃣ Iniciar Jupyter Lab
+### 4️⃣ Launch Jupyter Lab
 
 ```bash
 jupyter lab
@@ -54,72 +54,73 @@ jupyter lab
 
 ---
 
-## 📘 Descripción por carpetas
+## 📘 Folder Overview
 
 ### 🧩 `analytics/EDA`
-- Limpieza y exploración de datos  
-- Visualizaciones y *profiling*  
-- Análisis descriptivo de datasets
+- Data cleaning and exploration  
+- Visualization and profiling  
+- Descriptive data analysis
 
 ### 🤖 `Machine Learning`
-- Modelado predictivo y clasificación  
-- Evaluación con métricas y *cross-validation*  
-- Construcción de *pipelines* en `scikit-learn`
+- Predictive modeling and classification  
+- Evaluation with metrics and cross-validation  
+- Building pipelines with `scikit-learn`
 
 ### ⚙️ `Data Engineering/LLM`
-- Experimentos con *Large Language Models* (LLMs)  
-- Ingesta y transformación de datos  
-- Ejercicios de automatización y orquestación ligera
+- Experiments with *Large Language Models (LLMs)*  
+- Data ingestion and transformation  
+- Automation and lightweight orchestration exercises
 
 ### 🐍 `fundamentals/hundir la flota`
-- Proyecto en Python: implementación del clásico juego *Hundir la flota*  
-- Enfoque en lógica, control de flujo y diseño modular
+- Python fundamentals project: *Battleship game implementation*  
+- Focus on logic, control flow, and modular design
 
 ### 🏢 `CAPGEMINI`
-- Caso práctico aplicado a empresa  
-- Documentación, análisis y notebooks específicos
+- Real-world business case  
+- Documentation, analysis, and notebooks
 
 ---
 
-## 🧪 Estructura recomendada de datos
+## 🧪 Recommended Data Structure
 
 ```
 data/
-├── raw/         # Datos originales
-├── interim/     # Procesados parcialmente
-└── processed/   # Listos para modelar
+├── raw/         # Original data
+├── interim/     # Intermediate processed data
+└── processed/   # Ready-to-model datasets
 ```
 
-> ⚠️ Los datasets no se incluyen en el repositorio. Añádelos localmente dentro de la carpeta `data/`.
+> ⚠️ Datasets are not included in the repository.  
+> Add them locally inside the `data/` folder.
 
 ---
 
-## 🧭 Recomendaciones
+## 🧭 Best Practices
 
-- Usa nombres claros para notebooks:  
-  `01_eda.ipynb`, `02_preprocessing.ipynb`, `03_model.ipynb`, etc.
-- Guarda tus modelos con `joblib` (`model.joblib`).
-- Añade un `.env` para tus claves API (si usas OpenAI o similares).
-
----
-
-## 📜 Licencia
-
-Este proyecto **no tiene una licencia pública**.  
-Todos los derechos están reservados (© Yan Jun).  
-No se permite la reproducción, distribución ni uso del código sin autorización expresa del autor.
+- Use clear notebook naming conventions:  
+  `01_eda.ipynb`, `02_preprocessing.ipynb`, `03_model.ipynb`, etc.  
+- Save trained models using `joblib` (`model.joblib`).  
+- Store API keys or secrets in a `.env` file (for OpenAI or similar APIs).
 
 ---
 
-## ✍️ Autor
+## 📜 License
+
+This project **does not have a public license**.  
+All rights reserved (© Yan Jun).  
+Reproduction, distribution, or usage of this code is not permitted without explicit authorization from the author.
+
+---
+
+## ✍️ Author
 
 **Yan Jun**  
-Estudiante de Data Science  
+Data Science Student  
 GitHub: [@yanjunchenye](https://github.com/yanjunchenye)
 
 ---
 
-## 🌟 Notas finales
+## 🌟 Final Notes
 
-Este repositorio refleja el aprendizaje progresivo durante la formación en *Data Science* con **The Bridge**, combinando teoría, práctica y proyectos aplicados.  
-El objetivo es mostrar evolución, organización y capacidad técnica en el manejo del ciclo completo de datos.
+This repository showcases the progressive learning path throughout the *Data Science* program at **The Bridge**, combining theory, practice, and applied projects.  
+Its goal is to demonstrate growth, organization, and technical skills across the full data lifecycle.
