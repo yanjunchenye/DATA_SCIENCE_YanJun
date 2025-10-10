@@ -42,7 +42,7 @@ def create_pie_chart(df_group, title):
 import threading
 import time
 import random
-from limpieza_datos import clean_data_ddos, tres_en_uno
+from limpieza_datos import clean_data_ddos, tres_en_uno, clean_data_phishing
 
 # Control global
 is_logging = False
@@ -50,10 +50,10 @@ is_logging = False
 def malware_type_detection(record):
     if 'Destination Port' in record.keys():
         clean_data_ddos(record)
+    elif 'url' in record.keys():
+        clean_data_phishing(dict)
     else:
         tres_en_uno(record)
-    #elif:
-        #clean_data_phishing(dict)
 
 def background_logger():
     global is_logging
@@ -62,11 +62,12 @@ def background_logger():
     # cargar datasets una vez
     df_int_login = pd.read_csv("https://desafiogrupo1.s3.us-east-1.amazonaws.com/df1_alimentacion_login.csv")
     df_ddos = pd.read_csv("https://desafiogrupo1.s3.us-east-1.amazonaws.com/df_alimentacion_DDOS.csv")
-    #df_phishing = pd.read_csv("https://desafiogrupo1.s3.us-east-1.amazonaws.com/df_prueba_phising.csv")
+    df_phishing = pd.read_csv("https://desafiogrupo1.s3.us-east-1.amazonaws.com/df_prueba_phising.csv")
 
     login_list = (
         df_int_login.to_dict(orient="records")
         + df_ddos.to_dict(orient="records")
+        + df_phishing.to_dict(orient="records")
     )
 
     while is_logging:  # bucle infinito hasta que paremos
