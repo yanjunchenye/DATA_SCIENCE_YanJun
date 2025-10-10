@@ -1,4 +1,4 @@
-# 🧠 ONLINE_DS_THEBRIDGE_YanJun
+# 🧠 DATA_SCIENCE_YanJun
 
 Repositorio personal del itinerario de **Data Science** realizado en *The Bridge*.  
 Incluye notebooks, ejercicios y proyectos organizados por módulos, abarcando desde fundamentos de programación hasta *Machine Learning* y *Data Engineering*.
