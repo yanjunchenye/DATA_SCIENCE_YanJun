@@ -1,4 +1,4 @@
-# 🧠 ONLINE_DS_THEBRIDGE_YanJun
+# 🧠 DATA_SCIENCE_YanJun
 
 Personal repository for the **Data Science** program completed at *The Bridge*.  
 It includes Jupyter notebooks, exercises, and projects organized by modules — covering everything from programming fundamentals to *Machine Learning* and *Data Engineering*.
