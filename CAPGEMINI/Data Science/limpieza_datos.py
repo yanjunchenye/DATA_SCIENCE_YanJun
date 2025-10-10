@@ -368,7 +368,7 @@ def tres_en_uno(dict):
     insert_into_db_debug(df_clean, df_enriq)
 
 # ================  PHISHING  ====================
-'''import pandas as pd
+import pandas as pd
 import numpy as np
 import psycopg2
 import psycopg2.extras
@@ -654,4 +654,4 @@ def insertar_phishing_enriquecido(url, logs_id):
     """, records)
     conn.commit()
     cur.close()
-    conn.close()'''
+    conn.close()
