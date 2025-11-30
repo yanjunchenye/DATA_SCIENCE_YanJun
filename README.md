@@ -1,23 +1,6 @@
 # 🧠 DATA_SCIENCE_YanJun
 
 Personal repository for the **Data Science** program completed at *The Bridge*.  
-It includes Jupyter notebooks, exercises, and projects organized by modules — covering everything from programming fundamentals to *Machine Learning* and *Data Engineering*.
-
----
-
-## 📂 Repository Structure
-
-```
-ONLINE_DS_THEBRIDGE_YanJun/
-├── analytics/
-│   └── EDA/                 # Exploratory Data Analysis
-├── Machine Learning/        # Classical modeling and evaluation
-├── Data Engineering/
-│   └── LLM/                 # LLM experiments and data pipelines
-├── fundamentals/
-│   └── hundir la flota/     # Python fundamentals project (Battleship game)
-└── CAPGEMINI/               # Business case project
-```
 
 ---
 
@@ -51,56 +34,6 @@ pip install jupyterlab numpy pandas matplotlib seaborn scikit-learn plotly tqdm 
 ```bash
 jupyter lab
 ```
-
----
-
-## 📘 Folder Overview
-
-### 🧩 `analytics/EDA`
-- Data cleaning and exploration  
-- Visualization and profiling  
-- Descriptive data analysis
-
-### 🤖 `Machine Learning`
-- Predictive modeling and classification  
-- Evaluation with metrics and cross-validation  
-- Building pipelines with `scikit-learn`
-
-### ⚙️ `Data Engineering/LLM`
-- Experiments with *Large Language Models (LLMs)*  
-- Data ingestion and transformation  
-- Automation and lightweight orchestration exercises
-
-### 🐍 `fundamentals/hundir la flota`
-- Python fundamentals project: *Battleship game implementation*  
-- Focus on logic, control flow, and modular design
-
-### 🏢 `CAPGEMINI`
-- Real-world business case  
-- Documentation, analysis, and notebooks
-
----
-
-## 🧪 Recommended Data Structure
-
-```
-data/
-├── raw/         # Original data
-├── interim/     # Intermediate processed data
-└── processed/   # Ready-to-model datasets
-```
-
-> ⚠️ Datasets are not included in the repository.  
-> Add them locally inside the `data/` folder.
-
----
-
-## 🧭 Best Practices
-
-- Use clear notebook naming conventions:  
-  `01_eda.ipynb`, `02_preprocessing.ipynb`, `03_model.ipynb`, etc.  
-- Save trained models using `joblib` (`model.joblib`).  
-- Store API keys or secrets in a `.env` file (for OpenAI or similar APIs).
 
 ---
 
